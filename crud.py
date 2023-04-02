@@ -1,7 +1,7 @@
 from pymongo import MongoClient
 from bson.objectid import ObjectId
 
-class crud:
+class Crud:
     def __init__(self, database):
         self.db = database
         self.collection = database.collection

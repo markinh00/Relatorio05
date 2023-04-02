@@ -1,10 +1,10 @@
 from database import Database
-from crud import crud
+from crud import Crud
 
 db = Database(database="relatorio05", collection="livros")
 db.resetDatabase()
 
-book_crud = crud(db)
+book_crud = Crud(db)
 
 newBookID = book_crud.creat_book("Persy Jackson", "Rick Riordan", 2005, 165.99)
 book_crud.read_book_by_id(newBookID)
